@@ -20,6 +20,8 @@ header,
 }
 
 input[type="text"],
+input[type="tel"],
+input[type="email"],
 button,
 select {
     padding: 1rem 0;
@@ -27,18 +29,23 @@ select {
 
 .rounded,
 select,
-input[type="text"] {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
     border-radius: 5px;
     border: none;
 }
 
 input[type="text"],
+input[type="tel"],
+input[type="email"],
 textarea,
 select {
     background-color: #F0F0F0;
 }
 
-input[placeholder] {
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
     text-align: right;
     font-style: italic;
     padding: 1rem 20px;
@@ -50,7 +57,8 @@ input[type="checkbox"] {
 }
 
 form,
-.contact-info {
+.contact-info,
+.flex-pair {
     display: flex;
     flex-direction: column;
 }
@@ -75,7 +83,7 @@ textarea {
 }
 
 form {
-    max-width: 768px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -121,6 +129,10 @@ button,
     margin: 0;
 }
 
+#zip {
+    width: 50%;
+}
+
 h2 {
     margin-bottom: 5px;
 }
@@ -140,6 +152,7 @@ form::before {
 
 input,
 .section-head,
+select,
 footer {
     margin: .5rem 0;
 }
@@ -156,6 +169,42 @@ footer {
     font-size: .9rem;
 }
 
+input:focus, textarea:focus, select:focus {
+    background-color: lightseagreen;
+}
+input[type=text],
+input[type=tel],
+input[type=email],
+select,textarea {
+    width: 100%;
+    transition: width .35s ease-in-out;
+  }
+  
+  input[type=text]:focus,
+  input[type=tel]:focus,
+  input[type=email]:focus,
+  select:focus, textarea:focus {
+    width: 250px;
+  }
+
 @media screen and (min-width: 768px) {
 
+    .flex-pair {
+        flex-direction: row;
+        }
+    .contact-info input,
+    .contact-info select {
+        flex-grow: 1;
+        flex-basis: 75%;
+        }
+    .contact-info label {
+        flex-basis: 25%;
+        height:50px;
+        margin: auto 0;
+        }
+    #zip {
+        max-width: 25%;
     }
+    }
+
+    
