@@ -1,14 +1,30 @@
-input:not([type="checkbox"]) {
-    display: block;
-}
+
 input {
     font-size: 18px;
 }
-.container {
-    max-width: 860px;
-    padding: 1rem;
-}
+
 header,
 .center {
     text-align: center;
 }
+form,
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+form {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+button {
+    border: none;
+    padding: 0 2px;
+    margin: 0 2px;
+}
+input:not([type="checkbox"]) {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+
+    }
