@@ -4,15 +4,49 @@
 
 html {
     font-family: 'Source Serif Pro', serif;
+    line-height: 1.8;
+    font-size: 16px;
 }
 
-input {
-    font-size: 18px;
+header {
+    background-color: #001a33;
+    margin: -8px -10px 0;
+    padding: 1rem 0;
 }
 
 header,
 .center {
     text-align: center;
+}
+
+input[type="text"],
+button,
+select {
+    padding: 1rem 0;
+}
+
+.rounded,
+select,
+input[type="text"] {
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="text"],
+textarea,
+select {
+    background-color: #F0F0F0;
+}
+
+input[placeholder] {
+    text-align: right;
+    font-style: italic;
+    padding: 1rem 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 20px;
 }
 
 form,
@@ -31,6 +65,11 @@ textarea {
     width: 100%;
 }
 
+textarea {
+    height: 100px;
+    margin: .5rem 0;
+}
+
 .website-name {
     text-transform: uppercase;
 }
@@ -39,21 +78,82 @@ form {
     max-width: 768px;
     margin: 0 auto;
 }
+
 fieldset,
 button {
     border: none;
 }
 
-button {
-    border: none;
-    padding: 0 2px;
-    margin: 0 2px;
+fieldset {
+    padding: 0;
+}
+
+select,
+button,
+input[placeholder] {
     font-family: 'Source Serif Pro', serif;
+}
+button {
+    background-color: lightseagreen;
+}
+
+button,
+.website-name {
+    color: white;
+}
+
+.space,
+.contact-info {
+    margin-bottom: 1rem;
 }
 
 .font {
     font-weight: bold;
     font-size: 1.3rem;
+}
+
+.top {
+    margin: 1rem 0;
+}
+
+.top p {
+    line-height: 1.4;
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+form::before {
+    content:"";
+    height: 5px;
+    width: 100%;
+    margin: 1rem 0;
+    border-top: 5px solid black;
+    border-bottom: 3px solid black;
+}
+
+.container {
+    margin: 1rem .25rem;
+}
+
+input,
+.section-head,
+footer {
+    margin: .5rem 0;
+}
+
+.contact-info::after {
+    content:"";
+    height: 5px;
+    border-top: 3px solid black;
+    margin-top: 2rem;
+}
+
+footer {
+    font-style: italic;
+    font-size: .9rem;
 }
 
 @media screen and (min-width: 768px) {
