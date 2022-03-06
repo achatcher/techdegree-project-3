@@ -1,0 +1,14 @@
+input:not([type="checkbox"]) {
+    display: block;
+}
+input {
+    font-size: 18px;
+}
+.container {
+    max-width: 860px;
+    padding: 1rem;
+}
+header,
+.center {
+    text-align: center;
+}
