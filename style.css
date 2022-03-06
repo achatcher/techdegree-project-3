@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Serif Pro', serif;
+}
 
 input {
     font-size: 18px;
@@ -7,24 +14,41 @@ header,
 .center {
     text-align: center;
 }
+
 form,
-fieldset {
+.contact-info {
     display: flex;
     flex-direction: column;
 }
+
+.inline {
+    display: block;
+}
+
+
+.website-name {
+    text-transform: uppercase;
+}
+
 form {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
 }
+
 button {
+    width: 100%;
     border: none;
     padding: 0 2px;
     margin: 0 2px;
+    font-family: 'Source Serif Pro', serif;
 }
-input:not([type="checkbox"]) {
-    display: block;
+
+.font {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
+
 @media screen and (min-width: 768px) {
 
     }
