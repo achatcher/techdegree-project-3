@@ -25,19 +25,26 @@ form,
     display: block;
 }
 
+button,
+form,
+textarea {
+    width: 100%;
+}
 
 .website-name {
     text-transform: uppercase;
 }
 
 form {
-    width: 100%;
     max-width: 768px;
     margin: 0 auto;
 }
+fieldset,
+button {
+    border: none;
+}
 
 button {
-    width: 100%;
     border: none;
     padding: 0 2px;
     margin: 0 2px;
