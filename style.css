@@ -1,6 +1,9 @@
+/* Global Layout */
 * {
     box-sizing: border-box;
 }
+
+/* Type Selectors */
 
 html {
     font-family: 'Source Serif Pro', serif;
